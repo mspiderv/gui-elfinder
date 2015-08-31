@@ -1,0 +1,20 @@
+{
+    "name": "vitlabs/gui-elfinder",
+    "description": "",
+    "authors": [
+		{
+			"name": "Matej Vitaz",
+			"email": "mspiderv@gmail.com"
+		}
+	],
+    "require": {
+        "vitlabs/gui-core": "*",
+        "vitlabs/gui-admin": "*",
+        "barryvdh/laravel-elfinder": "^0.3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vitlabs\\GUIElfinder\\": ""
+        }
+    }
+}
