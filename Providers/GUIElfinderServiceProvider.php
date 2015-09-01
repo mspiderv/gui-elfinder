@@ -14,20 +14,22 @@ class GUIElfinderServiceProvider extends ImplementationServiceProvider
         'FileManager',
     ];
 
-    protected function getViewPath()
+    protected function getPackageName()
     {
-        return __DIR__ . '/../Resources/views/';
+        return 'gui-elfinder';
     }
 
-    protected function getAssetsPath()
-    {
-        return __DIR__ . '/../Assets/';
-    }
-
-    protected function publishConfig()
+    protected function assetDirs()
     {
         return [
-            __DIR__ . '/../Config/config.php' => 'gui-elfinder'
+            __DIR__ . '/../Assets/'
+        ];
+    }
+
+    protected function viewDirs()
+    {
+        return [
+            __DIR__ . '/../Resources/views/'
         ];
     }
 

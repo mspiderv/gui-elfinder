@@ -1,6 +1,6 @@
 {
     "name": "vitlabs/gui-elfinder",
-    "description": "",
+    "description": "Elfinder implementation of FileManager contract.",
     "authors": [
 		{
 			"name": "Matej Vitaz",
@@ -8,8 +8,8 @@
 		}
 	],
     "require": {
-        "vitlabs/gui-core": "*",
-        "vitlabs/gui-admin": "*",
+        "vitlabs/gui-core": "@dev",
+        "vitlabs/gui-admin": "@dev",
         "barryvdh/laravel-elfinder": "^0.3.4"
     },
     "autoload": {

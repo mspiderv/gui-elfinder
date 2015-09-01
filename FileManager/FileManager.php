@@ -28,18 +28,19 @@ class FileManager extends Element implements FileManagerContract {
             'js' => [
 
                 // jQuery and jQuery UI
-                'AdminLTE-2.2.0/plugins/jQuery/jQuery-2.1.4.min.js',
+                //'AdminLTE-2.2.0/plugins/jQuery/jQuery-2.1.4.min.js', // TODO
                 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js',
 
                 // elFinder JS
                 '/packages/barryvdh/elfinder/js/elfinder.min.js',
 
                 // Initialize elfinder
-                'js/elfinder-init.js',
+                '~js/elfinder-init.js',
 
             ],
-            'config' => [
-                'gui-elfinder.connectorURL',
+            'variables' => [
+                'elfinderConnectorURL' => route('elfinder.connector'),
+                'csrfToken' => csrf_token(),
             ],
         ];
     }
